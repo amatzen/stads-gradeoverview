@@ -31,7 +31,7 @@ const LoginPage = () => {
 
             <Button
                 variant="contained"
-                size="lg"
+                size="large"
                 fullWidth
             >Contained</Button>
 
