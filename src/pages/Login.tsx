@@ -45,7 +45,7 @@ const LoginPage = () => {
                 variant="contained"
                 size="large"
                 fullWidth
-            >Contained</Button>
+            >Log in</Button>
 
         </Paper>
     )
