@@ -9,7 +9,7 @@ function App() {
   const [step, setStep] = useState<StepType>('login');
 
   return (
-    <Container>
+    <Container sx={{ marginTop: '2rem' }}>
       <Box sx={{
         marginBottom: '2em',
         textAlign: 'center'
