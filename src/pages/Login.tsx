@@ -1,4 +1,4 @@
-import { Button, Paper, TextField, Typography } from "@mui/material";
+import { Button, MenuItem, Paper, Select, TextField, Typography } from "@mui/material";
 
 const LoginPage = () => {
     return (
@@ -13,6 +13,18 @@ const LoginPage = () => {
                     marginBottom: '0.5rem'
                 }}
             >Log ind</Typography>
+
+            <Select
+                fullWidth
+                defaultValue="na"
+                sx={{
+                    textAlign: 'left'
+                }}
+            >
+                <MenuItem value="na" disabled>Vælg en institution</MenuItem>
+                <MenuItem value="https://selvbprod.sdu.dk/prod/sb/">Syddansk Universitet</MenuItem>
+                <MenuItem value="https://sb.aau.dk/sb-ad/sb/">Aalborg Universitet</MenuItem>
+            </Select>
 
             <TextField
                 required
