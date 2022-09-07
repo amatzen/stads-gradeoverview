@@ -1,6 +1,11 @@
 import { Button, MenuItem, Paper, Select, TextField, Typography } from "@mui/material";
+import { useState } from "react";
 
 const LoginPage = () => {
+    const [stadsUrl, setStadsUrl] = useState<string>("na");
+    const [username, setUsername] = useState<string>("");
+    const [password, setPassword] = useState<string>("");
+
     return (
         <Paper variant="outlined" sx={{
             textAlign: 'center',
@@ -16,6 +21,8 @@ const LoginPage = () => {
 
             <Select
                 fullWidth
+                onChange={(e) => setStadsUrl(e.target.value)}
+                value={stadsUrl}
                 defaultValue="na"
                 sx={{
                     textAlign: 'left'
@@ -31,6 +38,8 @@ const LoginPage = () => {
                 label="Brugernavn"
                 fullWidth
                 margin="normal"
+                onChange={(e) => setUsername(e.target.value)}
+                value={username}
             />
             
             <TextField
@@ -39,6 +48,8 @@ const LoginPage = () => {
                 label="Adgangskode"
                 fullWidth
                 margin="normal"
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
             />
 
             <Button
