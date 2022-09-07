@@ -56,6 +56,7 @@ const LoginPage = () => {
                 variant="contained"
                 size="large"
                 fullWidth
+                disabled={(stadsUrl ?? 'na') === 'na' || !Boolean(username) || !Boolean(password)}
             >Log in</Button>
 
         </Paper>
